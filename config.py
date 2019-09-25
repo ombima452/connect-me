@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'postgresql + psycopg2://moringa:tynashee452@localhost/connect-me'
