@@ -30,10 +30,14 @@ end
 deactivate nondestructive
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/moringa/Desktop/connect-me/virtual"
 =======
 set -gx VIRTUAL_ENV "/home/moringa/Documents/connect-me/virtual"
 >>>>>>> 0eeee351cf8b4f340da053fd9bfd04f40ca0b8ca
+=======
+set -gx VIRTUAL_ENV "/home/moringa/Documents/Group-projects/connect-me/virtual"
+>>>>>>> 7e1b6fe4ec36291492d35461788878d6cdef5840
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

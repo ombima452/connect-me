@@ -1,8 +1,66 @@
 {% extends 'base.html'%}
 
 {% block content%}
-    <h1>CONNECT ME </h1>
 
+
+
+
+<div class="uk-position-relative" >
+    
+        <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"  data-src="https://i.ibb.co/gPXPBnz/Be-Funky-photo-23.jpg"  style="height: 610px" uk-img uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+            <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
+            <a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 40%" href="#" uk-marker></a>
+            <a class="uk-position-absolute uk-transform-center" style="left: 80%; top: 70%" href="#" uk-marker></a>
+            <h1 class="uk-animation-slide-bottom" style="font-family: 'Barlow', sans-serif; font-size: 50px; color: beige">Connect-me</h1>
+          </div>
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left" style="margin-left: 5%">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">      
+                            <p> 
+                                <i class="fas fa-binoculars"></i>
+                                Connect-me</p> </a></li>
+                        <li><a href="#">
+                                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">About</button>
+
+                                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                    <div class="uk-offcanvas-bar">
+                                
+                                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                
+                                        <h3>Connect-me</h3>
+                                
+                                        <p> If a person is missing, get to sign up and login in to the web page and upload the missing person and the details in which users logged in can comment and provide additional information on the whereabouts of the missing person if known.</p>
+                                
+                                    </div>
+                                </div>
+
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                    <button class="uk-button uk-button-default" type="button">Services</button>
+                                    <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    
     {% for post in all_posts %}
         {{post.name}}
         {{post.age}}
@@ -10,4 +68,5 @@
         {{post.description}}
     {% endfor %}
 
-{%endblock%}
+
+{% endblock %}
