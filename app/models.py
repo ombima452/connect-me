@@ -1,6 +1,12 @@
 from . import db 
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
+from . import login_manager
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
 
 class User(UserMixin,db.Model):
     __tablename__='users'
@@ -54,7 +60,7 @@ class Comments(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     comment=db.Column(db.String(255))
     name=db.Column(db.String(255))
-    number=db.Column(db.Integer(255))
+    # number=db.Column(db.Integer(255))
     user_id=db.Column(db.Integer,db.ForeignKey('users.id'))
     post_id=db.Column(db.Integer,db.ForeignKey('posts.id'))
     def save(self):
