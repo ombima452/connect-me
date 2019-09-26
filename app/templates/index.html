@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content%}
+    <h1>CONNECT ME </h1>
+
+    {% for post in all_posts %}
+        {{post.name}}
+        {{post.age}}
+        {{post.gender}}
+        {{post.description}}
+    {% endfor %}
+
+{%endblock%}
