@@ -1,3 +1,3 @@
 Hello{{user.username}}
 You are  welcome to connect_me.
-We have just seen that you have signed up for our applicationand we want to welcome you to love and to belong to this community this is where you are connected to your missing family. We are glad to serve you
+We have just seen that you have signed up for our application and we want to welcome you to love and to belong to this community this is where you are connected to your missing family. We are glad to serve you
