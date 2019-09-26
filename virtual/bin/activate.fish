@@ -29,7 +29,11 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/moringa/Desktop/connect-me/virtual"
+=======
+set -gx VIRTUAL_ENV "/home/moringa/Documents/connect-me/virtual"
+>>>>>>> 0eeee351cf8b4f340da053fd9bfd04f40ca0b8ca
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
