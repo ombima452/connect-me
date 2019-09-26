@@ -1,9 +1,12 @@
 from flask_login import login_required
+<<<<<<< HEAD
 from flask import render_template,request,redirect,url_for,abort
 from ..models import User
 from .forms import ReviewForm,UpdateProfile
 from .. import db
 from .. import db,photos
+=======
+>>>>>>> Dev
 
 
 @main.route('/')
@@ -14,6 +17,7 @@ def index():
     '''
 
 
+<<<<<<< HEAD
     return render_template('index.html')
 
 @main.route('/user/<uname>')
@@ -54,3 +58,6 @@ def update_pic(uname):
         user.profile_pic_path = path
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
+=======
+    return render_template('index.html')
+>>>>>>> Dev

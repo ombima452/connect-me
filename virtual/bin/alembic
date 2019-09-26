@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/home/moringa/Documents/GroupProjects/connect-me/virtual/bin/python3.6
+=======
+#!/home/moringa/Documents/connect-me/virtual/bin/python3
+>>>>>>> Dev
 # EASY-INSTALL-ENTRY-SCRIPT: 'alembic==1.2.1','console_scripts','alembic'
 __requires__ = 'alembic==1.2.1'
 import re

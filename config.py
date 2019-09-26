@@ -7,7 +7,10 @@ class Config:
     '''
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:1234@localhost/connect'
     SECRET_KEY='evu46583'
+<<<<<<< HEAD
     UPLOADED_PHOTOS_DEST ='app/static/photos'
+=======
+>>>>>>> Dev
 class ProdConfig(Config):
     '''
     Production configuration child class
