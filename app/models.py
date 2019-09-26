@@ -39,6 +39,7 @@ class Post(db.Model):
     __tablename__='posts'
     id=db.Column(db.Integer,primary_key = True)
     name = db.Column(db.String(255))
+    age = db.Column(db.String(255))
     gender = db.Column(db.String(255))
     description = db.Column(db.String(255))
     comment = db.relationship('Comments',backref='post',lazy='dynamic')
@@ -60,7 +61,7 @@ class Comments(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     comment=db.Column(db.String(255))
     name=db.Column(db.String(255))
-    # number=db.Column(db.Integer(255))
+    number=db.Column(db.String(255))
     user_id=db.Column(db.Integer,db.ForeignKey('users.id'))
     post_id=db.Column(db.Integer,db.ForeignKey('posts.id'))
     def save(self):
