@@ -2,6 +2,8 @@ from . import db
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
 
+
+
 class User(UserMixin,db.Model):
     __tablename__='users'
     id = db.Column(db.Integer,primary_key = True)
@@ -10,6 +12,8 @@ class User(UserMixin,db.Model):
     comment = db.relationship('Comments',backref='user',lazy='dynamic')
     post = db.relationship('Post',backref='user',lazy='dynamic')
     email=db.Column(db.String(255),unique = True)
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
 
     @property
     def password(self):
