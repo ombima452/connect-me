@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 #!/home/moringa/Desktop/connect-me/virtual/bin/python3.6
-=======
-#!/home/moringa/Documents/connect-me/virtual/bin/python3
->>>>>>> 0eeee351cf8b4f340da053fd9bfd04f40ca0b8ca
-=======
-#!/home/moringa/Documents/Group-projects/connect-me/virtual/bin/python3.6
->>>>>>> 7e1b6fe4ec36291492d35461788878d6cdef5840
-=======
-#!/home/moringa/Documents/GroupProjects/connect-me/virtual/bin/python3.6
-=======
-#!/home/moringa/Documents/connect-me/virtual/bin/python3
->>>>>>> Dev
->>>>>>> b7cf39af251eb5530313b3a00fd81b0d5ee0d12b
 
 # -*- coding: utf-8 -*-
 import re

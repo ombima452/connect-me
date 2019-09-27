@@ -4,7 +4,7 @@ from app.models import Post,Comments
 from . forms import PostForm,CommentForm
 from flask import render_template,request,redirect,url_for,abort
 from ..models import User
-from .forms import ReviewForm,UpdateProfile
+from .forms import UpdateProfile
 from .. import db,photos
 
 
@@ -18,6 +18,7 @@ def index():
 
     return render_template('index.html',all_posts = all_posts)
 
+
 @main.route('/posts/new',methods=['GET','POST'])
 @login_required
 def new_post():
@@ -30,6 +31,7 @@ def new_post():
     return render_template('post.html',post_form=post_form)
 
 @main.route('/comment/<int:post_id>',methods=['GET','POST'])
+
 @login_required
 def comment(post_id):
     comment_form = CommentForm()

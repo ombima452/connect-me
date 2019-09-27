@@ -2,6 +2,10 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block content %}
+<div class="js-upload" uk-form-custom>
+    <input type="file" multiple>
+    <button class="uk-button uk-button-default" type="button" tabindex="-1">Select Picture</button>
+</div>
 
     {{wtf.quick_form(post_form)}}
 
