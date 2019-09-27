@@ -37,11 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-<<<<<<< HEAD
 VIRTUAL_ENV="/home/moringa/Documents/GroupProjects/connect-me/virtual"
-=======
-VIRTUAL_ENV="/home/moringa/Documents/connect-me/virtual"
->>>>>>> Dev
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

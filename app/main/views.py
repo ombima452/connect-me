@@ -1,12 +1,10 @@
 from flask_login import login_required
-<<<<<<< HEAD
 from flask import render_template,request,redirect,url_for,abort
 from ..models import User
 from .forms import ReviewForm,UpdateProfile
 from .. import db
 from .. import db,photos
-=======
->>>>>>> Dev
+from app.main import main
 
 
 @main.route('/')
@@ -16,8 +14,6 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-
-<<<<<<< HEAD
     return render_template('index.html')
 
 @main.route('/user/<uname>')
@@ -48,7 +44,7 @@ def update_profile(uname):
     return render_template('profile/update.html',form =form)    
 
 
-@main.route('/user/<uname>/update/pic',methods= ['POST'])
+@main.route('/user/update/pic',methods= ['POST'])
 @login_required
 def update_pic(uname):
     user = User.query.filter_by(username = uname).first()
@@ -58,6 +54,3 @@ def update_pic(uname):
         user.profile_pic_path = path
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
-=======
-    return render_template('index.html')
->>>>>>> Dev
