@@ -1,4 +1,5 @@
 from . import db 
+from app import login_manager
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
 
@@ -14,6 +15,13 @@ class User(UserMixin,db.Model):
     email=db.Column(db.String(255),unique = True)
     bio = db.Column(db.String(255))
     profile_pic_path = db.Column(db.String())
+
+
+    @login_manager.user_loader
+    def get_user(user_id):
+        return User.query.get(user_id)
+
+
 
     @property
     def password(self):
