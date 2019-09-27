@@ -1,0 +1,329 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<div class="uk-position-relative">
+
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
+        data-src="https://i.ibb.co/gPXPBnz/Be-Funky-photo-23.jpg" style="height: 610px" uk-img
+        uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+        <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
+        <a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 40%" href="#" uk-marker></a>
+        <a class="uk-position-absolute uk-transform-center" style="left: 80%; top: 70%" href="#" uk-marker></a>
+        <h1 class="uk-animation-slide-bottom" style="font-family: 'Barlow', sans-serif; font-size: 50px; color: beige">
+            Connect-me</h1>
+    </div>
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left" style="margin-left: 3%">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">
+                            <p class="uk-text-bold  uk-animation-slide-left"
+                                style="font-family:'Crimson Text', serif; font-size: 20px">
+                                <i class="fas fa-binoculars"></i>
+                                Connect-me</p>
+                        </a></li>
+                    <li><a href="#proffer">
+                            <button class="ui black basic button">Proffer</button>
+                        </a></li>
+                    <li><a href="#">
+                            <button class="ui black basic button" type="button"
+                                uk-toggle="target: #offcanvas-flip">About</button>
+
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <h3>Connect-me</h3>
+
+                                    <p> If a person is missing, get to sign up and login in to the web page and upload
+                                        the missing person and the details in which users logged in can comment and
+                                        provide additional information on the whereabouts of the missing person if
+                                        known.</p>
+
+                                    <blockquote cite="#">
+                                        <p class="uk-margin-small-bottom">There is no exercise better for the heart than
+                                            reaching down and lifting people up..</p>
+                                        <footer>By the <cite><a href="#">Connect-me Team</a></cite></footer>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                </ul>
+                <ul class="uk navbar-nav">
+                    <li style="margin-left: 650%">
+                        <a href="#">
+                            <button class="ui black basic button  uk-animation-slide-right">Profile</button>
+
+                            <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-nav-header">Proceed to:</li>
+                                    <li>
+                                        <!-- This is an anchor toggling the modal -->
+                                        <a href="#log-in" uk-toggle>Login</a>
+
+                                        <!-- This is the modal -->
+                                        <div id="log-in" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body">
+                                                <section class="form-gradient">
+
+                                                    <!--Form with header-->
+                                                    <div class="card">
+
+                                                        <!--Header-->
+                                                        <div class="header pt-3 morpheus-den-gradient">
+
+                                                            <div class="row d-flex justify-content-center">
+                                                                <h3 class="white-text mb-3 pt-3 font-weight-bold">Log in
+                                                                </h3>
+                                                            </div>
+
+                                                            <div class="row mt-2 mb-3 d-flex justify-content-center">
+                                                                <!--Facebook-->
+                                                                <a class="fa-lg p-2 m-2 fb-ic"><i
+                                                                        class="fab fa-facebook-f white-text fa-lg">
+                                                                    </i></a>
+                                                                <!--Twitter-->
+                                                                <a class="fa-lg p-2 m-2 tw-ic"><i
+                                                                        class="fab fa-twitter white-text fa-lg">
+                                                                    </i></a>
+                                                                <!--Google +-->
+                                                                <a class="fa-lg p-2 m-2 gplus-ic"><i
+                                                                        class="fab fa-google-plus-g white-text fa-lg">
+                                                                    </i></a>
+                                                            </div>
+
+                                                        </div>
+                                                        <!--Header-->
+
+                                                        <div class="card-body mx-4 mt-4">
+
+                                                            <!--Body-->
+                                                            <div class="md-form">
+                                                                <input type="text" id="Form-email3"
+                                                                    class="form-control">
+                                                                <label for="Form-email3">Your email</label>
+                                                            </div>
+
+                                                            <div class="md-form pb-1 pb-md-3">
+                                                                <input type="password" id="Form-pass3"
+                                                                    class="form-control">
+                                                                <label for="Form-pass3">Your password</label>
+                                                                <p
+                                                                    class="font-small grey-text d-flex justify-content-end">
+                                                                    Forgot <a href="#"
+                                                                        class="dark-grey-text ml-1 font-weight-bold">
+                                                                        Password?</a></p>
+                                                            </div>
+
+
+                                                            <!--Grid row-->
+                                                            <div class="row d-flex align-items-center mb-4">
+
+                                                                <!--Grid column-->
+                                                                <div class="col-md-1 col-md-5 d-flex align-items-start">
+                                                                    <div class="text-center">
+                                                                        <button class="ui secondary button">
+                                                                            Log in
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Grid column-->
+
+                                                                <!--Grid column-->
+                                                                <div class="col-md-7">
+                                                                    <p
+                                                                        class="font-small grey-text d-flex justify-content-end mt-3">
+                                                                        Don't have an account? <a href="#"
+                                                                            class="dark-grey-text ml-1 font-weight-bold">
+                                                                            Sign up</a></p>
+                                                                </div>
+                                                                <!--Grid column-->
+
+                                                            </div>
+                                                            <!--Grid row-->
+                                                        </div>
+
+                                                    </div>
+                                                    <!--/Form with header-->
+
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+
+
+                                        <!-- This is an anchor toggling the modal -->
+                                        <a href="#sign-up" uk-toggle>Sign Up</a>
+
+                                        <!-- This is the modal -->
+                                        <div id="sign-up" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body">
+                                                <!-- Card -->
+                                                <div class="card">
+
+                                                    <!-- Card body -->
+                                                    <div class="card-body">
+
+                                                        <!-- Material form register -->
+                                                        <form>
+                                                            <p class="h4 text-center py-4">Sign up</p>
+
+                                                            <!-- Material input text -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-user prefix grey-text"></i>
+                                                                <input type="text" id="materialFormCardNameEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardNameEx"
+                                                                    class="font-weight-light">Your name</label>
+                                                            </div>
+
+                                                            <!-- Material input email -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-envelope prefix grey-text"></i>
+                                                                <input type="email" id="materialFormCardEmailEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardEmailEx"
+                                                                    class="font-weight-light">Your email</label>
+                                                            </div>
+
+                                                            <!-- Material input password -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-key prefix grey-text"></i>
+                                                                <input type="password" id="materialFormCardPasswordEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardPasswordEx"
+                                                                    class="font-weight-light">Enter
+                                                                    password</label>
+                                                            </div>
+
+                                                            <!-- Material input password -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-lock prefix grey-text"></i>
+                                                                <input type="password" id="materialFormCardPasswordEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardPasswordEx"
+                                                                    class="font-weight-light">Confirm your
+                                                                    password</label>
+                                                            </div>
+
+                                                            <div class="text-center py-4 mt-3">
+                                                                <button class="ui secondary button">Register</button>
+                                                            </div>
+                                                        </form>
+                                                        <!-- Material form register -->
+
+                                                    </div>
+                                                    <!-- Card body -->
+
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-nav-divider"></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <!-- Section: Team v.3 -->
+    <br>
+<section class="team-section my-5">
+        <!-- Section heading -->
+        <h4 class="ui horizontal divider header" id="proffer">
+                <i class="tag icon"></i>
+                Proffer
+              </h4>
+        <!-- Section description -->
+        <p class="grey-text text-center w-responsive mx-auto mb-5">Get to add precise comments and find a lost person,upload a photo and details of the person that you want found and alternatively receive feedback from the comment sections. Log in to access this services.</p>
+      
+          <!-- Grid row-->
+          <div class="row text-center text-md-left">
+      
+                <!-- Grid column -->
+                <div class="col-xl-6 col-lg-12 mb-xl-0 mb-5 d-md-flex justify-content-between">
+                  <div class="avatar mb-md-0 mb-4 mx-4">
+                    <img src="https://i.ibb.co/fM8xvFv/6-A97-FA70-03-F2-479-F-8381-6521810-E48-B5.jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
+                  </div>
+                  <div class="mx-4">
+                    <h4 class="font-weight-bold mb-3">Mike Msanii</h4>
+                    <h6 class="font-weight-bold grey-text mb-3">Comedian</h6>
+                    <p class="grey-text">After hyping his upcoming feature on the churchil show. He never showed up. Missing.
+                      </p>
+                      <button class="ui black basic button">Details</button>
+                  </div>
+                </div>
+                <!-- Grid column -->
+            
+                <!-- Grid column -->
+
+                <div class="col-xl-6 col-lg-12 d-md-flex justify-content-between">
+                  <div class="avatar mb-md-0 mb-4 mx-4">
+                    <img src="https://i.ibb.co/n7dRHFc/74-DA2102-2-C3-E-42-D6-AB34-7-F5009185-F07.jpg" class="rounded z-depth-1 img-fluid"
+                      alt="Sample avatar">
+                  </div>
+                  <div class="mx-4">
+                    <h4 class="font-weight-bold mb-3">Max Wafs</h4>
+                    <h6 class="font-weight-bold grey-text mb-3">Contractor</h6>
+                    <p class="grey-text">Left work on Friday the 13th 2019 and his whereabouts are uknown  since.</p>
+                    <button class="ui black basic button">Details</button>
+                  </div>
+                </div>
+                <!-- Grid column -->
+            
+              </div>
+              <!-- Grid row-->      
+      <br>
+        <!-- Grid row-->
+        <div class="row text-center text-md-left">
+      
+          <!-- Grid column -->
+          <div class="col-xl-6 col-lg-12 mb-xl-0 mb-5 d-md-flex justify-content-between">
+            <div class="avatar mb-md-0 mb-4 mx-4">
+              <img src="https://i.ibb.co/j8LrXG3/85635-C7-F-EE87-4-FBB-9-F98-AC373-E625211.jpg" class="rounded z-depth-1" alt="Sample avatar">
+            </div>
+            <div class="mx-4">
+              <h4 class="font-weight-bold mb-3">Ndundiro Kamau</h4>
+              <h6 class="font-weight-bold grey-text mb-3">Ranchman</h6>
+              <p class="grey-text"> After his shift he left for home and has been missing since then. He never got home.</p>
+                <button class="ui black basic button">Details</button>
+            </div>
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-xl-6 col-lg-12 d-md-flex justify-content-between">
+            <div class="avatar mb-md-0 mb-4 mx-4">
+              <img src="https://i.ibb.co/C1nrDLc/1940925-C-8-E4-B-47-CA-80-FF-6110-C9-D70-B34.jpg" class="rounded z-depth-1 img-fluid"
+                alt="Sample avatar">
+            </div>
+            <div class="mx-4">
+              <h4 class="font-weight-bold mb-3">Agnes Melyah</h4>
+              <h6 class="font-weight-bold grey-text mb-3">Chief of Staff</h6>
+              <p class="grey-text"> Was last seen in MC20 chasing people from class. Whereabouts uknown.</p>
+                <button class="ui black basic button">Details</button>
+            </div>
+          </div>
+          <!-- Grid column -->
+      
+        </div>
+        <!-- Grid row-->
+        <br>
+      
+      </section>
+      <!-- Section: Team v.3 -->
+</div>
+{% endblock %}
