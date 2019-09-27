@@ -6,7 +6,7 @@ from wtforms import ValidationError
 class PostForm(FlaskForm):
     name = StringField('Name',validators=[Required()])
     age = StringField('Age', validators = [Required()])
-    gender = RadioField('Gender',choices=[('Male','Felame')])
+    gender = RadioField('Gender',choices=[('Male','Male'),('Female','Female')])
     description = TextAreaField('Write more information',validators=[Required()])
     submit = SubmitField('Submit')
 

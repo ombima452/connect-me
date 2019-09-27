@@ -21,20 +21,20 @@ def new_post():
     post_form = PostForm()
     if post_form.validate_on_submit():
         user_id = current_user._get_current_object().id
-        post = Post(name = post_form.name.data,age = post_form.age.data,gender = post_form.gender.data,user_id=user_id)
+        post = Post(name = post_form.name.data,age = post_form.age.data,gender = post_form.gender.data,description = post_form.description.data,user_id=user_id)
         post.save()
-        return redirect(url_for('man.index'))
-    return render_template('post.html',login_form=login_form)
+        return redirect(url_for('main.index'))
+    return render_template('post.html',post_form=post_form)
 
-@main.route('comment/<int:post_id>',methods=['GET','POST'])
+@main.route('/comment/<int:post_id>',methods=['GET','POST'])
 @login_required
-def comment(pitch_id):
+def comment(post_id):
     comment_form = CommentForm()
-    comments = Comments.query.filter_by(post_id=Post_id).all()
+    comments = Comments.query.filter_by(post_id=post_id).all()
     if comment_form.validate_on_submit():
         post_id = post_id
         user_id = current_user._get_current_object().id
         comment = Comments(name = comment_form.name.data,number = comment_form.number.data,comment = comment_form.comment.data,user_id = user_id, post_id = post_id) 
         comment.save()
         return redirect(url_for('main.index'))
-    ruturn render_template('comment.html',comment_form=comment_form,comments = comments)
+    return render_template('comment.html',comment_form=comment_form,comments = comments)
