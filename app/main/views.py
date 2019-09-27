@@ -1,7 +1,12 @@
 from flask_login import login_required,current_user
-from flask import redirect,render_template,url_for
 from . import main
-from .. import db
+from app.models import Post,Comments
+from . forms import PostForm,CommentForm
+from flask import render_template,request,redirect,url_for,abort
+from ..models import User
+from .forms import UpdateProfile
+from .. import db,photos
+
 
 @main.route('/')
 def index():
