@@ -6,8 +6,8 @@ from .. import db
 from flask_login import login_user,logout_user,login_required
 from ..email import mail_message
 
-@auth.route('/create_account',methods = ['GET','POST'])
-def create_account():
+@auth.route('/my_account',methods = ['GET','POST'])
+def my_account():
     registration_form = RegistrationForm()
     if registration_form.validate_on_submit():
         user=User(email = registration_form.email.data,username=registration_form.username.data,password = registration_form.password.data)
