@@ -2,9 +2,9 @@
 
 {% block content%}
 
-<div class="uk-position-relative">
 
-    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
+<div class="uk-position-relative">
+   <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
         data-src="https://i.ibb.co/gPXPBnz/Be-Funky-photo-23.jpg" style="height: 610px" uk-img
         uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
@@ -20,6 +20,7 @@
                     <li class="uk-active"><a href="#">
                             <p class="uk-text-bold  uk-animation-slide-left"
                                 style="font-family:'Crimson Text', serif; font-size: 20px">
+
                                 <i class="fas fa-binoculars"></i>
                                 Connect-me</p>
                         </a></li>
@@ -192,4 +193,16 @@
         </nav>
     </div>
 </div>
+
+
+    
+    {% for post in all_posts %}
+        {{post.name}}
+        {{post.age}}
+        {{post.gender}}
+        {{post.description}}
+    {% endfor %}
+
+
 {% endblock %}
+
