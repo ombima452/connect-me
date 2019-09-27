@@ -8,6 +8,8 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
+
+
 class User(UserMixin,db.Model):
     __tablename__='users'
     id = db.Column(db.Integer,primary_key = True)
@@ -16,6 +18,8 @@ class User(UserMixin,db.Model):
     comment = db.relationship('Comments',backref='user',lazy='dynamic')
     post = db.relationship('Post',backref='user',lazy='dynamic')
     email=db.Column(db.String(255),unique = True)
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
 
     @property
     def password(self):
