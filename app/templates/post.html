@@ -1,8 +1,8 @@
-{% extend 'base.html' %}
+{% extends 'base.html' %}
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block content %}
 
-    {{wtf.quick_form(forms)}}
+    {{wtf.quick_form(post_form)}}
 
 {% endblock %}
