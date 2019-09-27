@@ -19,6 +19,7 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('That name exists')
 
 class LoginForm(FlaskForm):
+    email=StringField('Enter your email',validators=[Required(),Email()])
     username = StringField('Your UserName',validators=[Required()])
     password = PasswordField('Password',validators =[Required()])
     remember = BooleanField('Remember me')

@@ -1,4 +1,8 @@
-#!/home/moringa/Documents/Group-projects/connect-me/virtual/bin/python3.6
+<<<<<<< HEAD
+#!/home/moringa/Desktop/connect-me/virtual/bin/python3.6
+=======
+#!/home/moringa/Documents/connect-me/virtual/bin/python3
+>>>>>>> b00efab0fdd2ff5e1c50fe8c5645eae3f6c2e8d1
 
 # -*- coding: utf-8 -*-
 import re

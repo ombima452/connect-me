@@ -1,12 +1,15 @@
-#!/home/moringa/Documents/Group-projects/connect-me/virtual/bin/python3.6
-# EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.1.0','console_scripts','mako-render'
-__requires__ = 'Mako==1.1.0'
+<<<<<<< HEAD
+#!/home/moringa/Desktop/connect-me/virtual/bin/python3.6
+=======
+#!/home/moringa/Documents/connect-me/virtual/bin/python3
+>>>>>>> b00efab0fdd2ff5e1c50fe8c5645eae3f6c2e8d1
+
+# -*- coding: utf-8 -*-
 import re
 import sys
-from pkg_resources import load_entry_point
+
+from mako.cmd import cmdline
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(
-        load_entry_point('Mako==1.1.0', 'console_scripts', 'mako-render')()
-    )
+    sys.exit(cmdline())

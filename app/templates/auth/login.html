@@ -2,7 +2,6 @@
 {% import 'bootstrap/wtf.html' as wtf%}
 
 {% block content %}
-<link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
 <div class="container-fluid"> 
     <div class="container">
         <div class="row">
@@ -17,7 +16,7 @@
           {% endfor %}
           <!-- Login form -->
           {{wtf.quick_form(login_form)}}
-          <p> You don't have an account? <a href="{{url_for('auth.create_account')}}">Sign up </a></p>
+          <p> You don't have an account? <a href="{{url_for('auth.my_account')}}">Sign up </a></p>
           </div>
           <div clas="col-md-2"> </div>
         </div>
