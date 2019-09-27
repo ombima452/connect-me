@@ -4,7 +4,7 @@
 
 
 <div class="uk-position-relative">
-   <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
         data-src="https://i.ibb.co/gPXPBnz/Be-Funky-photo-23.jpg" style="height: 610px" uk-img
         uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
@@ -62,7 +62,7 @@
 
                             <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                                 <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">Proceed to:</li>
+                                    <li class="uk-nav-er">Proceed to:</li>
                                     <li>
                                         <!-- This is an anchor toggling the modal -->
                                         <a href="#modal-example" uk-toggle>Login</a>
@@ -157,7 +157,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                     
+
 
                                         <!-- This is an anchor toggling the modal -->
                                         <a href="#modal-example" uk-toggle>Open</a>
@@ -195,14 +195,13 @@
 </div>
 
 
-    
-    {% for post in all_posts %}
-        {{post.name}}
-        {{post.age}}
-        {{post.gender}}
-        {{post.description}}
-    {% endfor %}
+
+{% for post in all_posts %}
+{{post.name}}
+{{post.age}}
+{{post.gender}}
+{{post.description}}
+{% endfor %}
 
 
 {% endblock %}
-
