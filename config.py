@@ -7,9 +7,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:tynashee452@localhost/connect'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:E*7@wach@localhost/connect'
     SECRET_KEY='evu46583'
-
 
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 465
@@ -18,8 +17,7 @@ class Config:
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     UPLOADED_PHOTOS_DEST ='app/static/photos'
-
-
+class ProdConfig(Config):
     '''
     Production configuration child class
     Args:
