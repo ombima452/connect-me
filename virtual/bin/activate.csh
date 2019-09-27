@@ -10,6 +10,7 @@ deactivate nondestructive
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/home/moringa/Desktop/connect-me/virtual"
 =======
 setenv VIRTUAL_ENV "/home/moringa/Documents/connect-me/virtual"
@@ -17,6 +18,12 @@ setenv VIRTUAL_ENV "/home/moringa/Documents/connect-me/virtual"
 =======
 setenv VIRTUAL_ENV "/home/moringa/Documents/Group-projects/connect-me/virtual"
 >>>>>>> 7e1b6fe4ec36291492d35461788878d6cdef5840
+=======
+setenv VIRTUAL_ENV "/home/moringa/Documents/GroupProjects/connect-me/virtual"
+=======
+setenv VIRTUAL_ENV "/home/moringa/Documents/connect-me/virtual"
+>>>>>>> Dev
+>>>>>>> b7cf39af251eb5530313b3a00fd81b0d5ee0d12b
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
