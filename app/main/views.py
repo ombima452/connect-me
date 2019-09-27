@@ -20,8 +20,6 @@ def index():
     View root page function that returns the index page and its data
     '''
     all_posts = Post.query.all()
-
-
     return render_template('home.html',all_posts = all_posts)
 
 
@@ -89,7 +87,6 @@ def update_pic(uname):
         db.session.commit()
 
         return redirect(url_for('main.profile',uname=uname))
-    return render_template('index.html')
-
-
+    
+    return render_template('home.html')
 

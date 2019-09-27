@@ -2,10 +2,10 @@
 
 {% block content%}
 
-
-
 <div class="uk-position-relative">
-   <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
+
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
+
         data-src="https://i.ibb.co/gPXPBnz/Be-Funky-photo-23.jpg" style="height: 610px" uk-img
         uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
@@ -25,8 +25,9 @@
                                 <i class="fas fa-binoculars"></i>
                                 Connect-me</p>
                         </a></li>
-                    <li><a href="#">
-                            <button class="ui black basic button">Item</button>
+                    <li><a href="#proffer">
+                            <button class="ui black basic button">Proffer</button>
+
                         </a></li>
                     <li><a href="#">
                             <button class="ui black basic button" type="button"
@@ -57,19 +58,23 @@
                     </li>
                 </ul>
                 <ul class="uk navbar-nav">
-                    <li style="margin-left: 620%">
+
+                    <li style="margin-left: 650%">
                         <a href="#">
-                            <button class="ui black basic button  uk-animation-slide-right">Services</button>
+                            <button class="ui black basic button  uk-animation-slide-right">Profile</button>
+
 
                             <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <li class="uk-nav-header">Proceed to:</li>
                                     <li>
                                         <!-- This is an anchor toggling the modal -->
-                                        <a href="#modal-example" uk-toggle>Login</a>
+
+                                        <a href="#log-in" uk-toggle>Login</a>
 
                                         <!-- This is the modal -->
-                                        <div id="modal-example" uk-modal>
+                                        <div id="log-in" uk-modal>
+
                                             <div class="uk-modal-dialog uk-modal-body">
                                                 <section class="form-gradient">
 
@@ -77,7 +82,9 @@
                                                     <div class="card">
 
                                                         <!--Header-->
-                                                        <div class="header pt-3 peach-gradient">
+
+                                                        <div class="header pt-3 morpheus-den-gradient">
+
 
                                                             <div class="row d-flex justify-content-center">
                                                                 <h3 class="white-text mb-3 pt-3 font-weight-bold">Log in
@@ -129,9 +136,11 @@
                                                                 <!--Grid column-->
                                                                 <div class="col-md-1 col-md-5 d-flex align-items-start">
                                                                     <div class="text-center">
-                                                                        <button type="button"
-                                                                            class="btn btn-grey btn-rounded z-depth-1a">Log
-                                                                            in</button>
+
+                                                                        <button class="ui secondary button">
+                                                                            Log in
+                                                                        </button>
+
                                                                     </div>
                                                                 </div>
                                                                 <!--Grid column-->
@@ -158,28 +167,75 @@
                                         </div>
                                     </li>
                                     <li>
-                                     
+
+
 
                                         <!-- This is an anchor toggling the modal -->
-                                        <a href="#modal-example" uk-toggle>Open</a>
+                                        <a href="#sign-up" uk-toggle>Sign Up</a>
 
                                         <!-- This is the modal -->
-                                        <div id="modal-example" uk-modal>
+                                        <div id="sign-up" uk-modal>
                                             <div class="uk-modal-dialog uk-modal-body">
-                                                <h2 class="uk-modal-title">Headline</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                <p class="uk-text-right">
-                                                    <button class="uk-button uk-button-default uk-modal-close"
-                                                        type="button">Cancel</button>
-                                                    <button class="uk-button uk-button-primary"
-                                                        type="button">Save</button>
-                                                </p>
+                                                <!-- Card -->
+                                                <div class="card">
+
+                                                    <!-- Card body -->
+                                                    <div class="card-body">
+
+                                                        <!-- Material form register -->
+                                                        <form>
+                                                            <p class="h4 text-center py-4">Sign up</p>
+
+                                                            <!-- Material input text -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-user prefix grey-text"></i>
+                                                                <input type="text" id="materialFormCardNameEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardNameEx"
+                                                                    class="font-weight-light">Your name</label>
+                                                            </div>
+
+                                                            <!-- Material input email -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-envelope prefix grey-text"></i>
+                                                                <input type="email" id="materialFormCardEmailEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardEmailEx"
+                                                                    class="font-weight-light">Your email</label>
+                                                            </div>
+
+                                                            <!-- Material input password -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-key prefix grey-text"></i>
+                                                                <input type="password" id="materialFormCardPasswordEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardPasswordEx"
+                                                                    class="font-weight-light">Enter
+                                                                    password</label>
+                                                            </div>
+
+                                                            <!-- Material input password -->
+                                                            <div class="md-form">
+                                                                <i class="fa fa-lock prefix grey-text"></i>
+                                                                <input type="password" id="materialFormCardPasswordEx"
+                                                                    class="form-control">
+                                                                <label for="materialFormCardPasswordEx"
+                                                                    class="font-weight-light">Confirm your
+                                                                    password</label>
+                                                            </div>
+
+                                                            <div class="text-center py-4 mt-3">
+                                                                <button class="ui secondary button">Register</button>
+                                                            </div>
+                                                        </form>
+                                                        <!-- Material form register -->
+
+                                                    </div>
+                                                    <!-- Card body -->
+
+                                                </div>
+                                                <!-- Card -->
+
                                             </div>
                                         </div>
                                     </li>
@@ -195,4 +251,94 @@
     </div>
 </div>
 
-{% endblock%}
+<br><br>
+<div class="container">
+    <!-- Section: Team v.3 -->
+    <br>
+<section class="team-section my-5">
+        <!-- Section heading -->
+        <h4 class="ui horizontal divider header" id="proffer">
+                <i class="tag icon"></i>
+                Proffer
+              </h4>
+        <!-- Section description -->
+        <p class="grey-text text-center w-responsive mx-auto mb-5">Get to add precise comments and find a lost person,upload a photo and details of the person that you want found and alternatively receive feedback from the comment sections. Log in to access this services.</p>
+      
+          <!-- Grid row-->
+          <div class="row text-center text-md-left">
+      
+                <!-- Grid column -->
+                <div class="col-xl-6 col-lg-12 mb-xl-0 mb-5 d-md-flex justify-content-between">
+                  <div class="avatar mb-md-0 mb-4 mx-4">
+                    <img src="https://i.ibb.co/fM8xvFv/6-A97-FA70-03-F2-479-F-8381-6521810-E48-B5.jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
+                  </div>
+                  <div class="mx-4">
+                    <h4 class="font-weight-bold mb-3">Mike Msanii</h4>
+                    <h6 class="font-weight-bold grey-text mb-3">Comedian</h6>
+                    <p class="grey-text">After hyping his upcoming feature on the churchil show. He never showed up. Missing.
+                      </p>
+                      <button class="ui black basic button">Details</button>
+                  </div>
+                </div>
+                <!-- Grid column -->
+            
+                <!-- Grid column -->
+
+                <div class="col-xl-6 col-lg-12 d-md-flex justify-content-between">
+                  <div class="avatar mb-md-0 mb-4 mx-4">
+                    <img src="https://i.ibb.co/n7dRHFc/74-DA2102-2-C3-E-42-D6-AB34-7-F5009185-F07.jpg" class="rounded z-depth-1 img-fluid"
+                      alt="Sample avatar">
+                  </div>
+                  <div class="mx-4">
+                    <h4 class="font-weight-bold mb-3">Max Wafs</h4>
+                    <h6 class="font-weight-bold grey-text mb-3">Contractor</h6>
+                    <p class="grey-text">Left work on Friday the 13th 2019 and his whereabouts are uknown  since.</p>
+                    <button class="ui black basic button">Details</button>
+                  </div>
+                </div>
+                <!-- Grid column -->
+            
+              </div>
+              <!-- Grid row-->      
+      <br>
+        <!-- Grid row-->
+        <div class="row text-center text-md-left">
+      
+          <!-- Grid column -->
+          <div class="col-xl-6 col-lg-12 mb-xl-0 mb-5 d-md-flex justify-content-between">
+            <div class="avatar mb-md-0 mb-4 mx-4">
+              <img src="https://i.ibb.co/j8LrXG3/85635-C7-F-EE87-4-FBB-9-F98-AC373-E625211.jpg" class="rounded z-depth-1" alt="Sample avatar">
+            </div>
+            <div class="mx-4">
+              <h4 class="font-weight-bold mb-3">Ndundiro Kamau</h4>
+              <h6 class="font-weight-bold grey-text mb-3">Ranchman</h6>
+              <p class="grey-text"> After his shift he left for home and has been missing since then. He never got home.</p>
+                <button class="ui black basic button">Details</button>
+            </div>
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-xl-6 col-lg-12 d-md-flex justify-content-between">
+            <div class="avatar mb-md-0 mb-4 mx-4">
+              <img src="https://i.ibb.co/C1nrDLc/1940925-C-8-E4-B-47-CA-80-FF-6110-C9-D70-B34.jpg" class="rounded z-depth-1 img-fluid"
+                alt="Sample avatar">
+            </div>
+            <div class="mx-4">
+              <h4 class="font-weight-bold mb-3">Agnes Melyah</h4>
+              <h6 class="font-weight-bold grey-text mb-3">Chief of Staff</h6>
+              <p class="grey-text"> Was last seen in MC20 chasing people from class. Whereabouts uknown.</p>
+                <button class="ui black basic button">Details</button>
+            </div>
+          </div>
+          <!-- Grid column -->
+      
+        </div>
+        <!-- Grid row-->
+        <br>
+      
+      </section>
+      <!-- Section: Team v.3 -->
+</div>
+{% endblock %}
+
