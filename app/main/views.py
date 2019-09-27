@@ -1,11 +1,16 @@
-from flask_login import login_required,current_user
+
 from . import main
 from app.models import Post,Comments
 from . forms import PostForm,CommentForm
+from flask_login import login_required, current_user, login_manager
 from flask import render_template,request,redirect,url_for,abort
 from ..models import User
 from .forms import UpdateProfile
 from .. import db,photos
+from app.main import main
+
+
+
 
 
 @main.route('/')
@@ -16,7 +21,8 @@ def index():
     '''
     all_posts = Post.query.all()
 
-    return render_template('index.html',all_posts = all_posts)
+
+    return render_template('home.html',all_posts = all_posts)
 
 
 @main.route('/posts/new',methods=['GET','POST'])
@@ -81,6 +87,9 @@ def update_pic(uname):
         path = f'photos/{filename}'
         user.profile_pic_path = path
         db.session.commit()
+
         return redirect(url_for('main.profile',uname=uname))
     return render_template('index.html')
+
+
 
